@@ -25,7 +25,7 @@ If you are here as a UTU student taking BIOL 4300, you should do the following:
 
 1.  Login to your [Github](https://github.com/) account.
 
-1.  Fork [this repository](https://github.com/rklabacka/genomics-pipeline-intro), by
+1.  Fork [this repository](https://github.com/KLab-UT/trimming_raw_reads), by
     clicking the 'Fork' button on the upper right of the page.
 
     After a few seconds, you should be looking at *your*
@@ -139,7 +139,7 @@ Information on what the options for this program do is provided in the table bel
 ##### \*\* The TruSeq adapter sequences are ```AGATCGGAAGAGCACACGTCTGAACTCCAGTCA``` (for read 1) and ```AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT``` (for read2). 
 ##### \*\*\* This is to remove PCR duplicates, however this feature is only available in fastp versions after 0.22
 
-You'll notice that many of the options in this table aren't implemented in your command above. One reason for this is because the example_raw.fastq contains reads from single-end (SE) sequencing. Options such as ```--in2```, ```adapter_sequence_r2```, ```--correction```, ```--merged``` (and the other 
+You'll notice that many of the options in this table aren't implemented in your command above. One reason for this is because the example_raw.fastq contains reads from single-end (SE) sequencing. Options such as ```--in2```, ```adapter_sequence_r2```, ```--correction```, ```--merged``` are specific to paired-end (PE) sequencing.
 
 You can also split the output files into multiple fastq files, which can be helpful if you plan to do mapping in parallel. This options to create 3 output files for a single individual is shown below (we don't include it in this example, but it would decrease downstream processing time).
 ```fastp --split_prefix_digits=4 --out1=out.fq --split=3```
@@ -196,7 +196,7 @@ You should understand what is going on in both the q.main.sh and trim_raw_reads.
 ## Remix 1: Modify a trimming parameter
 Once your run has ran to completion, modify a parameter for fastp. You can change any parameter, but just choose one thing.
 
-You will make these changes to the "trim_raw_reads.sh" file and re-run the "q.main.sh" batch script. To make sure you don't overwrite your files from the previous run, I recommend changing the directory names to include ```remix1``` (**you only need to do this for the cleaned_reads directories. You should not re-download, re-fastq-dump, or re-qc the raw_reads. In other words, you should rename the directories in lines 35 and 36 and comment out lines 38 - 70. Alternatively, you could just make a new script and call it from q.main.sh**)
+You will make these changes to the "trim_raw_reads.sh" file and re-run the "q.main.sh" batch script. To make sure you don't overwrite your files from the previous run, I recommend changing the directory names to include ```remix1``` (**you only need to do this for the cleaned_reads directories. You should not re-download, re-fastq-dump, or re-qc the raw_reads. In other words, you should rename the directories in lines 37 and 38 and comment out lines 39 - 76. Alternatively, you could just make a new script and call it from q.main.sh**)
 
 ## Remix 2: Modify a DIFFERENT trimming parameter
 Once your run has ran to completion, modify a parameter for fastp. You can change any parameter, but just choose one thing.
