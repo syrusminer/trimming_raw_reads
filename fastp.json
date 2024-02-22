@@ -36,7 +36,7 @@
 	"adapter_cutting": {
 		"adapter_trimmed_reads": 0,
 		"adapter_trimmed_bases": 0,
-		"read1_adapter_sequence": "AGATCGAAGAGCACACGTCTGAACTCCAGTCA",
+		"read1_adapter_sequence": "AGATCGGAAGAGCACACGTCTGAACTCCAGTCA",
 		"read1_adapter_counts": {}
 	},
 	"read1_before_filtering": {
@@ -219,5 +219,5 @@
 		"overrepresented_sequences": {
 		}
 	},
-	"command": "fastp -i example_raw.fastq -q 15 -u 40 -e 30 -l 15 -a AGATCGAAGAGCACACGTCTGAACTCCAGTCA -M 25 -W 5 -5 -3 -o example_cleaned.fastq "
+	"command": "fastp -i example_raw.fastq -q 15 -u 40 -e 30 -l 15 -a AGATCGGAAGAGCACACGTCTGAACTCCAGTCA -M 25 -W 5 -5 -3 -o example_cleaned.fastq "
 }
