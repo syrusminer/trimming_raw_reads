@@ -26,8 +26,9 @@ multiqc . # This one combines the results of multiple fastqc results into one re
 
 
 ### Q4: Attach an image of the plot from fastqc showing the average base quality from your reads files
-![before-trimming-PHRED-plot-1](./images/<plot-for-reads1>)
-![before-trimming-PHRED-plot-1](./images/<plot-for-reads2>)
+![remix1](./uufs/chpc.utah.edu/common/home/u1207142/Biol4310/Classwork/trimming_raw_reads/images/remix1.png)
+![remix2](./uufs/chpc.utah.edu/common/home/u1207142/Biol4310/Classwork/trimming_raw_reads/images/remix2.png)
+![before](./uufs/chpc.utah.edu/common/home/u1207142/Biol4310/Classwork/trimming_raw_reads/images/'Before trimming.png)
 
 ---
 
